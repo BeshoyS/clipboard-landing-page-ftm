@@ -1,0 +1,411 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+/* Global */
+:root {
+  --font-family: "Bai Jamjuree", sans-serif;
+  --primary-strongcyan: rgb(38, 186, 164);
+  --primary-lightblue: rgb(97, 115, 255);
+  --neutral-darkgrayblue: rgb(76, 84, 93);
+  --neutral-grayblue: rgb(159, 171, 178);
+  --neutral-lightgrayblue: rgb(245, 246, 248);
+  --neutral-white: rgb(255, 255, 255);
+  --box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
+  --border-radius: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--neutral-grayblue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--neutral-darkgrayblue);
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 1rem auto;
+  padding: 0rem 1rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-darkgrayblue);
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-strongcyan);
+}
+
+button {
+  font-family: var(--font-family);
+  color: var(--neutral-white);
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* custom classes */
+.div-center {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.div-wide {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.section-padding {
+  padding: 4rem 0;
+}
+
+/* Main */
+.main {
+  padding: 7rem 0;
+  background-image: url(./images/bg-header-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main img {
+  margin-bottom: 1rem;
+}
+
+.main .desc {
+  width: 94%;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  gap: 0.5rem;
+}
+
+.btn-ios {
+  background-color: var(--primary-strongcyan);
+}
+.btn-mac {
+  background-color: var(--primary-lightblue);
+}
+
+/* catch */
+
+/* features */
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-image {
+  width: 50%;
+  transform: translateX(-10%);
+  -webkit-transform: translateX(-10%);
+  -moz-transform: translateX(-10%);
+  -ms-transform: translateX(-10%);
+  -o-transform: translateX(-10%);
+}
+
+.feature-image img {
+  display: block;
+  width: 100%;
+}
+
+.features-details {
+  width: 45%;
+}
+
+.feature {
+  width: 60%;
+}
+
+.feature .desc {
+  padding: 0;
+}
+
+/* Multiple Devices */
+.multiple-devices .devices-image {
+  width: 60%;
+}
+.multiple-devices img {
+  display: block;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+/* Benfits */
+.benfits-details {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benfit {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.benfit img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  margin: 1rem auto;
+}
+
+.benfit .title {
+  padding-top: 1rem;
+}
+
+.benfit .desc {
+  padding: 0;
+}
+
+/* Badges */
+.badges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.badges img {
+  display: block;
+  width: 15%;
+}
+
+/* Footer */
+footer {
+  background-color: var(--neutral-lightgrayblue);
+}
+
+.main-footer {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-content {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-align: left;
+}
+
+.footer-image img {
+  width: 45%;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links a {
+  width: 30%;
+}
+
+.social {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social a {
+  margin-right: 1rem;
+}
+
+.social a img {
+  width: 100%;
+  transition: filter 0.3s;
+  -webkit-transition: filter 0.3s;
+  -moz-transition: filter 0.3s;
+  -ms-transition: filter 0.3s;
+  -o-transition: filter 0.3s;
+}
+
+.social img:hover {
+  filter: invert(61%) sepia(77%) saturate(405%) hue-rotate(122deg)
+    brightness(86%) contrast(89%);
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  font-weight: 600;
+}
+
+/* Mobile Size */
+@media screen and (max-width: 768px) {
+  button {
+    padding: 0.9rem 1.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  /* custom classes */
+  .div-center,
+  .div-wide {
+    width: 85%;
+  }
+
+  /* Main */
+  .main {
+    background-image: url(./images/bg-header-mobile.png);
+  }
+
+  .main .desc {
+    width: 90%;
+  }
+
+  .btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* features */
+  .features {
+    width: 85%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .feature-image {
+    width: 100%;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  .features-details,
+  .feature {
+    width: 100%;
+    text-align: center;
+  }
+
+  .feature {
+    margin: 3rem auto;
+  }
+
+  /* Multiple Devices */
+  .multiple-devices .devices-image {
+    width: 100%;
+  }
+
+  /* Benfits */
+  .benfits-details {
+    flex-direction: column;
+  }
+
+  .benfit {
+    margin: 1rem auto;
+    width: 100%;
+  }
+
+  /* Badges */
+  .badges {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .badges img {
+    width: 40%;
+  }
+
+  /* Footer */
+  .main-footer {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer-image img {
+    display: block;
+    margin: auto;
+  }
+
+  .links {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .links a {
+    width: 100%;
+  }
+
+  .social {
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .social a {
+    margin-right: 0;
+  }
+}
