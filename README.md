@@ -1,5 +1,7 @@
 # Frontend Mentor - Clipboard landing page
 
+### Live Demo: https://beshoys.github.io/clipboard-landing-page-ftm/
+
 ![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
